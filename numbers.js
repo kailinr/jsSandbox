@@ -40,13 +40,14 @@ val = Math.max(3,6,4,2,2,4,5443,);
 //Random: 
 val = Math.random();  //returns random decimal.
 
-//Random Whole Number
+//Random Number > 1
 val = Math.random() * 20; //returns random number from 0 - 19 because you're multiplying a decimal by 20.
 
-//Random Whole Number in a Specific Range
+//Random Number between 1 and 20
 val = Math.random() * 20 + 1    //random # (float)  between 1 and 20 - has decimals.
 
-val = Math.floor(Math.random() * 20 + 1); //random whole number between 1 and 20 - ha
+//Random Whole Number between 1 & 20 [no decimal}]
+val = Math.floor(Math.random() * 20 + 1); 
 
 
 
