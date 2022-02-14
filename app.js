@@ -1,44 +1,73 @@
-//FOR LOOP
 
-for (let i = 0; i <= 10; i++) {
-  console.log(i);
-}
+let i = 0;
 
-for (let i = 0; i <= 10; i++) {
-  console.log('Number' + i);
-}  //logs Number0 ... number 10
-
-
-//Add extra step to loop iteration 
-for (let i = 0; i <= 10; i++) {
-    if(i === 2){
-      console.log("2 is the best");
-    }
-  console.log("Number " + i);
-} //
-
-
-//Replace Iteration w/ Different Functionality
-
-for (let i = 0; i < 10; i++) {
-  if (i === 8){
-    console.log('NUMBER 8 FOR LIFE');
-    continue;  //meaning keep going to the next iteration.
-  }  
-  console.log(`Number ${i}`);
+while (i < 10) {
+  console.log(`num ${i}`);
+  i++
 }
 
 
 
-//BREAK LOOP at a specific Condition
-for (let i = 0; i < 10; i++) {
-  if (i === 2){
-    console.log('NUMBER 2 FOR LIFE');
-    continue;  //meaning keep going to the next iteration.
-  }  
-  if (i === 6){
-    console.log('Stop the Loop now');
-    break;
-  }
-  console.log(`Number ${i}`);
+//DO WHILE LOOP
+
+let b = 0;
+
+do {
+  console.log('testing' + b);
+  b++
+}
+while (b < 3);
+
+
+//Loop Through Arrays
+
+const cars = ['ford', 'chevy', 'honda', 'toyota'];
+
+for (let i = 0; i < cars.length; i++) {
+  console.log(cars[i]);
+}
+
+//For Each Loop w/ Array
+cars.forEach(function(car){
+  console.log(car);
+});
+
+
+//For Each Loop w/ Array - w. Value & Index Params
+cars.forEach(function(car, index){
+  console.log(`${index} : ${car}`);
+});
+
+//For Each Loop w/ Array - w. Value & Index & Array Params
+cars.forEach(function(car, index, array){
+  console.log(`${index} : ${car}`);
+  console.log(array);
+});
+
+
+
+//MAP
+//Loop through an array of objects
+const users = [
+  {id:1, name:'john'},
+  {id:2, name:'Sue'},
+  {id:3, name:'Sam'},
+];
+
+const ids = users.map(function(user){
+  return user.id;
+});
+
+console.log(ids);
+
+
+//FOR IN LOOP
+const newUser = {
+  first: 'John',
+  last: 'Samson',
+  age: 50
+};
+
+for(let x in newUser){
+  console.log(`${x} : ${newUser[x]}`);
 }
