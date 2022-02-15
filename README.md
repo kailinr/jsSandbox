@@ -1,3 +1,3 @@
 # jsSandbox
 
-Files on data types, type conversion, other lesson files. 
+Examples files with examples, notes, and documenation on fundamental JS concepts.   
